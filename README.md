@@ -13,6 +13,7 @@ FEATURES SUPPORTED IN THIS docker SERVICE:
 you have to run the docker image in "-ti" ==>Interactive mode to be able 
 to provide a keyboard input integer . Otherwise the docker service num2Eng will through a 
 EOF line error 
+4) It works upto 100s of trillions!!!!
 
 Sample output for clarification:
 =================================
