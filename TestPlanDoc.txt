@@ -1,0 +1,14 @@
+TESTCASE 1: Build and run the docker image interactively for Python Number to English Service
+STATUS: SUCCESSFUL
+
+TESTCASE 2: Enter a series of positive integers when the service is running (it runs in a infinite loop)
+STATUS: SUCCESSFUL
+
+TESTCASE 3: Run the python num2eng docker service and enter negative integer and watch the program indicate only positive integers as input
+STATUS: SUCCESSFUL
+
+TESTCASE 4: Run the python num2eng docker service and input a alphanumeric character and observe the service deny the value and exit the program
+STATUS: SUCCESSFUL
+
+TESTCASE 5: CTRL-C keyboard input terminates the program
+STATUS: SUCCESSFUL
