@@ -11,11 +11,14 @@ Removing intermediate container 61a5fbc75a5a
 Successfully built 6597d81b1382
 Successfully tagged num2eng:latest
 [veenrao@den02cis] ~/Num2English  
+
 $ !1071
 docker images | grep num2eng
 num2eng                                                                     latest              6597d81b1382        14 seconds ago      917MB
+
 $ docker images | grep num
 num2eng                                                                     latest              6597d81b1382        13 minutes ago      917MB
+
 $ docker run -ti 6597d81b1382
 Enter a Number: 123
 123
@@ -46,3 +49,20 @@ Traceback (most recent call last):
     num = int (input("Enter a Number: "))
 ValueError: invalid literal for int() with base 10: '021934875asdf'
 [veenrao@den02cis] ~/Num2English  
+
+$ docker build -t num2eng .
+Sending build context to Docker daemon  6.144kB
+Step 1/3 : From python:3
+ ---> 02d2bb146b3b
+Step 2/3 : ADD num2eng.py .
+ ---> e77b2041c390
+Step 3/3 : ENTRYPOINT python ./num2eng.py
+ ---> Running in 61a5fbc75a5a
+Removing intermediate container 61a5fbc75a5a
+ ---> 6597d81b1382
+Successfully built 6597d81b1382
+Successfully tagged num2eng:latest
+[veenrao@den02cis] ~/Num2English  
+$ !1071
+docker images | grep num2eng
+num2eng                                                                     latest              6597d81b1382        14 seconds ago      917MB
