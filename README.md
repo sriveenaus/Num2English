@@ -1,8 +1,10 @@
 INSTRUCTIONS:
 =============
 1)docker build -t num2eng .
+
 2)docker images | grep num2eng
-num2eng                                                                     latest              6597d81b1382        14 seconds ago      917MB
+num2eng  latest              6597d81b1382        14 seconds ago      917MB
+
 3)docker run -ti 6597d81b1382
 Enter a Number: 1234
 1234
